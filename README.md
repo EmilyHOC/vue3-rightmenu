@@ -3,9 +3,9 @@ vue3-context-menu
 ---
 A context menu component for Vue3
 
-![Screenshot](https://raw.githubusercontent.com/imengyu/vue3-context-menu/main/screenshot/first.png)
+![Screenshot](https://github.com/EmilyHOC/vue3-rightmenu/main/screenshot/first.png)
 
-English | [简体中文](https://github.com/imengyu/vue3-context-menu/blob/main/README.CN.md)
+English | [简体中文](https://github.com/EmilyHOC/vue3-rightmenu/blob/main/README.CN.md)
 
 ---
 
@@ -123,17 +123,13 @@ methods: {
 |`mac`|Mac like theme|![example-default-dark.jpg](https://raw.githubusercontent.com/imengyu/vue3-context-menu/main/screenshot/example-mac.jpg)|
 |`mac dark`|Mac like theme with dark|![example-default-dark.jpg](https://raw.githubusercontent.com/imengyu/vue3-context-menu/main/screenshot/example-mac-dark.jpg)|
 
-## AD: Author's other project
 
-* [vue-code-layout A Vue editor layout component that like VSCode](https://github.com/imengyu/vue-code-layout)
-* [vue-dock-layout A Vue editor layout component that like Visual Studio](https://github.com/imengyu/vue-dock-layout)
-* [vue-dynamic-form A data driven form component for vue3](https://github.com/imengyu/vue-dynamic-form)
 
 ## Development
 
 ```shell
-git clone git@github.com:imengyu/vue3-context-menu.git
-cd vue3-context-menu
+git clone https://github.com/EmilyHOC/vue3-rightmenu.git
+cd vue3-rightmenu
 npm install
 npm run dev # Development serve project
 npm run build-demo # Build example project
