@@ -1,34 +1,26 @@
 
-vue3-context-menu
----
-A context menu component for Vue3
+# vue3-context-menu
 
-![Screenshot](https://github.com/EmilyHOC/vue3-rightmenu/main/screenshot/first.png)
+一个使用 Vue3 制作的简洁美观简单的右键菜单组件
 
-English | [简体中文](https://github.com/EmilyHOC/vue3-rightmenu/blob/main/README.CN.md)
+![截图](https://github.com/EmilyHOC/vue3-rightmenu/blob/main/screenshot/first.png)
 
 ---
 
-## Features
+## 特性
 
-* Simple and easy to use, small size
-* Provide component mode and function mode
-* Provide multiple theme styles for your use
-* Customizable
+* 简洁易用，体积小
+* 提供组件模式和函数模式，调用方便
+* 提供多个菜单主题供您使用
+* 可自定义
 
-## Documentation
-
-[View Documentation](https://docs.imengyu.top/vue3-context-menu-docs/en/)
-
-[Click here View online Demo](https://docs.imengyu.top/vue3-context-menu-demo/)
-
-### Usage
+### 用法
 
 ```
 npm install -save @imengyu/vue3-context-menu
 ```
 
-Then import in the main.ts file:
+然后在 main.ts 中导入:
 
 ```js
 import '@imengyu/vue3-context-menu/lib/vue3-context-menu.css'
@@ -37,7 +29,7 @@ import ContextMenu from '@imengyu/vue3-context-menu'
 createApp(App).use(ContextMenu)     
 ```
 
-Then you can use the ContextMenu in the .vue file:
+然后你就可以在 vue 文件中使用菜单了:
 
 ```js
 import ContextMenu from '@imengyu/vue3-context-menu'
@@ -69,48 +61,15 @@ onContextMenu(e : MouseEvent) {
 }
 ```
 
-Or component:
+关于详细的用法，请参考文档。
 
-```html
-<context-menu
-  v-model:show="show"
-  :options="optionsComponent"
->
-  <context-menu-item label="Simple item" @click="onMenuClick(1)" />
-  <context-menu-sperator /><!--use this to add sperator-->
-  <context-menu-group label="Menu with child">
-    <context-menu-item label="Item1" @click="onMenuClick(2)" />
-    <context-menu-item label="Item2" @click="onMenuClick(3)" />
-    <context-menu-group label="Child with v-for 50">
-      <context-menu-item v-for="index of 50" :key="index" :label="'Item3-'+index" @click="onLoopMenuClick(index)" />
-    </context-menu-group>
-  </context-menu-group>
-</context-menu>
-```
+## 文档
 
-```js
-data() {
-  return {
-    show: false,
-    optionsComponent: {
-      zIndex: 3,
-      minWidth: 230,
-      x: 500,
-      y: 200
-    },
-  }
-},
-methods: {
-  onButtonClick(e : MouseEvent) {
-    //Show component mode menu
-    this.show = true;
-    this.options.x = e.x;
-    this.options.y = e.y;
-  },
-}
-```
+[查看文档](https://docs.imengyu.top/vue3-context-menu-docs/)
 
-## Built-in themes
+[查看在线演示](https://docs.imengyu.top/vue3-context-menu-demo/)
+
+## 已有主题
 
 |theme|explain|example image|
 |--|--|--|
@@ -123,12 +82,16 @@ methods: {
 |`mac`|Mac like theme|![example-default-dark.jpg](https://raw.githubusercontent.com/imengyu/vue3-context-menu/main/screenshot/example-mac.jpg)|
 |`mac dark`|Mac like theme with dark|![example-default-dark.jpg](https://raw.githubusercontent.com/imengyu/vue3-context-menu/main/screenshot/example-mac-dark.jpg)|
 
+## 广告: 作者其他的有用项目
 
+* [vue-code-layout A Vue editor layout component that like VSCode](https://github.com/imengyu/vue-code-layout)
+* [vue-dock-layout A Vue editor layout component that like Visual Studio](https://github.com/imengyu/vue-dock-layout)
+* [vue-dynamic-form A data driven form component for vue3](https://github.com/imengyu/vue-dynamic-form)
 
-## Development
+## 开发
 
 ```shell
-git clone https://github.com/EmilyHOC/vue3-rightmenu.git
+https://github.com/EmilyHOC/vue3-rightmenu.git
 cd vue3-rightmenu
 npm install
 npm run dev # Development serve project
@@ -139,3 +102,8 @@ npm run build-lib # Build library project
 ## License
 
 [MIT](./LICENSE)
+
+## 修改记录
+#### 鼠标悬浮到右键菜单显示tooltip
+
+![截图](https://github.com/EmilyHOC/vue3-rightmenu/blob/main/screenshot/鼠标悬浮tooltip.jpg)
