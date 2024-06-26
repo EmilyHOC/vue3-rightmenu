@@ -3,7 +3,7 @@
 
 一个使用 Vue3 制作的简洁美观简单的右键菜单组件
 
-![截图](https://raw.githubusercontent.com/imengyu/vue3-context-menu/main/screenshot/first.png)
+![截图](https://github.com/EmilyHOC/vue3-rightmenu/blob/main/screenshot/first.png)
 
 ---
 
@@ -91,8 +91,8 @@ onContextMenu(e : MouseEvent) {
 ## 开发
 
 ```shell
-git clone git@github.com:imengyu/vue3-context-menu.git
-cd vue3-context-menu
+https://github.com/EmilyHOC/vue3-rightmenu.git
+cd vue3-rightmenu
 npm install
 npm run dev # Development serve project
 npm run build-demo # Build example project
@@ -102,3 +102,8 @@ npm run build-lib # Build library project
 ## License
 
 [MIT](./LICENSE)
+
+## 修改记录
+#### 鼠标悬浮到右键菜单显示tooltip
+
+![截图](https://github.com/EmilyHOC/vue3-rightmenu/blob/main/screenshot/鼠标悬浮tooltip.jpg)
